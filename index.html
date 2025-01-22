@@ -7,32 +7,24 @@
     <title>AI Image Detector</title>
   </head>
   <body>
-    <h1>AI Image Detector</h1>
+      <h1>AI Image Detector</h1>
 
     <div class="wrapper">
-      <div class="upload-container">
-        <h3>Upload Image</h3>
-        <div class="buttons">
-          <input
-            type="file"
-            id="imageInput"
-            accept="image/*"
-            style="display: none"
-          />
-          <button
-            class="file-input-button"
-            oneclick="document.getElementById('imageInput').click();"
-          >
-            Choose File
-          </button>
-          <button id="uploadButtton">Analyze Image</button>
+        <div class="upload-container">
+            <h3>Upload Your Image</h3>
+            <div class="buttons">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <button class="file-input-button" onclick="document.getElementById('imageInput').click();">Choose
+                    File</button>
+                <button id="uploadButton">Analyze Image</button>
+            </div>
+            <img src="images/not-found.jpg" id="imagePreview">
         </div>
-        <img src="images/not-found.jpg" id="imagePreview" />
-      </div>
 
-      <div class="colors-container">
-        <p class="error">Nothing to show...</p>
-      </div>
+        <div class="colors-container">
+            <p class="error">Nothing to show...</p>
+        </div>
+
     </div>
 
     <div class="tags-container">
@@ -49,7 +41,7 @@
         <div class="modal-content">
             <h3>Uploading Image...</h3>
             <div class="progress-bar">
-                <div id="uploadingProgress" class="progress"></div>
+                <div id="uploadProgress" class="progress"></div>
             </div>
         </div>
     </div>
