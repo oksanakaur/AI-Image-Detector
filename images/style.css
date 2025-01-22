@@ -29,8 +29,32 @@ body > h1 {
 
 .upload-container,
 .colors-container {
-    background-color: #8181b;
+    background-color: #18181b;
     padding: 30px;
     border-radius: 10px;
     width: 35%;
 }
+
+.upload-container {
+    margin-bottom: 24px;
+}
+
+.button {
+    padding: 8px 14px;
+    color: #fff;
+    background-color: #27292e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d5224e;
+}
+
+.upload-container .buttons {
+    display: flex;
+    gap: 10px;
+}
+
